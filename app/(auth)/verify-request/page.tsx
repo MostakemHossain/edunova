@@ -82,7 +82,8 @@ export default function VerifyRequest() {
           disabled={emailPending || !isOtpCompleted}
           className="w-full mt-2"
         >
-          Verify Email
+          
+            {emailPending ? "Verifying..." : "Verify Email"}
         </Button>
       </CardContent>
     </Card>
